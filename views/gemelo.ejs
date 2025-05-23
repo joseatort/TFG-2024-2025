@@ -1,0 +1,202 @@
+<div class="position-absolute overflow-hidden" id="molino">
+
+    <div class="position-fixed bottom-0 start-50 translate-middle-x mb-3 dot-wrapper align-items-center botonesCamara">
+        <input type="radio" id="inicio" name="navigation" onclick="inicio()" class="dot">
+        <label for="inicio"></label>
+        <input type="radio" id="centro" name="navigation" onclick="centro()" class="dot" checked>
+        <label for="centro"></label>
+        <input type="radio" id="final" name="navigation" onclick="final()" class="dot">
+        <label for="final"></label>
+    </div>
+
+    <div id="root" class="w-100 position-fixed overflow-hidden"></div>
+
+    <!-- Barra de control superior con botones -->
+    <div id="barraControl" class="barraControl">
+        <button class="btnPanel" data-target="panelClima" onclick="disableButton(this)">Weather</button>
+        <% if(tipoGemelo == "Terrestre"){%>
+            <button class="btnPanel" data-target="panelPlataforma" disabled>Platform</button>
+        <% } else { %>
+            <button class="btnPanel" data-target="panelPlataforma" onclick="disableButton(this)">Platform</button>
+        <% } %>
+        <button class="btnPanel" data-target="panelAlarmas" onclick="disableButton(this)">Alarms</button>
+        <button class="btnPanel" data-target="panelControl" onclick="disableButton(this)">Control</button>
+        <button class="btnPanel" data-target="panelSalidas" onclick="disableButton(this)">Outputs</button>
+
+        <select class="btnPanel text-dark border border-dark" id="rangoX">
+            <option value="60000">1 min</option>
+            <option value="300000">5 min</option>
+            <option value="1800000">30 min</option>
+            <option value="3600000">1 h</option>
+            <option value="86400000">1 d</option>
+        </select>
+    </div>
+
+    <!-- Panel de Clima (Ubicado en la Esquina Superior Izquierda) -->
+    <div id="panelClima" class="panel panelClima">
+        <div class="pt-2 px-4 d-flex justify-content-between h-15">
+            <h3 class="opacity-75">Weather</h3>
+            <button class="btnMinimizar" data-target="panelClima">
+                <span class="material-symbols-rounded">
+                    close
+                </span>
+            </button>
+        </div>
+    
+        <div class="px-1 w-100 d-flex h-85">
+            <!-- Primera mitad con los datos básicos -->
+            <div class="w-50 h-100 d-flex gap-1">
+                <div class="w-50 d-flex flex-column justify-content-center align-items-center gap-1 mb-1">
+                    <div id="velocidadViento" class="h-50 w-100 botonClima" onclick="disableButton(this)"></div>
+                    <div id="alturaOlas" class="h-50 w-100 botonClima" onclick="disableButton(this)"></div>
+                </div>
+    
+                <div class="w-50 d-flex flex-column justify-content-center align-items-center mb-1">
+                    <div id="orientacionViento" class="h-100 w-100 botonClima"></div>
+                </div>
+            </div>
+    
+            <!-- Segunda mitad donde se mostrarán más detalles de un campo -->
+            <div id="detalleDatosClima" class="w-50 h-100 d-flex align-items-center justify-content-center">
+                <p class="text-white fs-3">Click on a chart to expand it</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Panel de Plataforma (Ubicado en la Esquina Inferior Izquierda) -->
+    <div id="panelPlataforma" class="panel panelPlataforma">
+        <div class="pt-2 px-4 d-flex justify-content-between h-15">
+            <h3 class="opacity-75">Platform</h3>
+            <button class="btnMinimizar" data-target="panelPlataforma">
+                <span class="material-symbols-rounded">
+                    close
+                </span>
+            </button>
+        </div>
+        <div class="panelBody w-100 d-flex h-85">
+            <div id="movimientoPlataforma" class="w-50 h-100"></div>
+            <div id="anguloPlataforma" class="w-50 h-100"></div>
+        </div>
+    </div>
+
+    <div id="panelAlarmas" class="panel panelAlarmas">
+        <div class="pt-2 px-4 d-flex justify-content-between">
+            <h3 class="opacity-75">Alarms</h3>
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <button class="btn px-0 btnMinimizar" alt="Editar alarmas" data-target="panelEditarAlarmas">
+                    <span class="material-symbols-rounded">
+                        settings
+                    </span>
+                </button>
+                <button class="btn px-0" onclick="eliminarAlertas(event)" alt="Eliminar todas las alarmas">
+                    <span class="material-symbols-rounded text-white">
+                        delete_forever
+                    </span>
+                </button>
+                <button class="btnMinimizar px-0" data-target="panelAlarmas">
+                    <span class="material-symbols-rounded">
+                        close
+                    </span>
+                </button>
+            </div>
+            
+        </div>
+        <div class="panelBody h-85 py-0 px-2" id="alertasContainer"></div>
+    </div>
+
+    <div class="panel panelEditarAlarmas" id="panelEditarAlarmas">
+        <div class="h-15 pt-2 px-3 d-flex justify-content-between">
+            <h3 class="opacity-75">Edit Alarms</h3>
+            <button class="btnMinimizar" data-target="panelEditarAlarmas">
+                <span class="material-symbols-rounded">
+                    close
+                </span>
+            </button>
+        </div>
+
+        <form id="editarAlarmas" class="h-85">
+            <div class="p-3 h-75">
+                <div class="w-100 h-50 d-flex gap-3">
+
+                    <div class="w-50">
+                        <label for="rpmAlarma" class="form-label">Rotor speed</label>
+                        <input type="number" id="rpmAlarma" name="rpmAlarma" class="form-control bg-transparent text-white" placeholder="<%= granjasUsuario.find(m => m.nombre == nombreGranja).molinos.find(n => n.idMolino == idMolino).alarmas.rpm %>" step="0.1" min="0">
+                    </div>
+                    
+                    <div class="w-50">
+                        <label for="anguloPlataformaAlarma" class="form-label">Platform angles</label>
+
+                        <% if(tipoGemelo == "Terrestre"){%>
+                            <input type="number" id="anguloPlataformaAlarma" name="anguloPlataformaAlarma" class="form-control bg-transparent text-white"  placeholder="<%= granjasUsuario.find(m => m.nombre == nombreGranja).molinos.find(n => n.idMolino == idMolino).alarmas.anguloPlataforma %>" disabled>
+                        <% } else { %>
+                            <input type="number" id="anguloPlataformaAlarma" name="anguloPlataformaAlarma" class="form-control bg-transparent text-white"  placeholder="<%= granjasUsuario.find(m => m.nombre == nombreGranja).molinos.find(n => n.idMolino == idMolino).alarmas.anguloPlataforma %>" step="0.1">
+                        <% } %>
+                    </div>
+                </div>
+                <div class="w-100 h-50 d-flex gap-3">
+                    <div class="w-50">
+                        <label for="TTDAlarma" class="form-label">TTD</label>
+                        <input type="number" id="TTDAlarma" name="TTDAlarma" class="form-control bg-transparent text-white"  placeholder="<%=  granjasUsuario.find(m => m.nombre == nombreGranja).molinos.find(n => n.idMolino == idMolino).alarmas.TTD %>" step="0.01">
+                    </div>
+                    <div class="w-50">
+                        <label for="velocidadVientoAlarma" class="form-label">Wind Speed</label>
+                        <input type="number" id="velocidadVientoAlarma" name="velocidadVientoAlarma" class="form-control bg-transparent text-white"  placeholder="<%=  granjasUsuario.find(m => m.nombre == nombreGranja).molinos.find(n => n.idMolino == idMolino).alarmas.velocidadViento %>" step="0.1" min="0">
+                    </div>
+                </div>                
+            </div>
+            <div class="h-15 w-100 d-flex justify-content-end align-items-center">
+                <button class="me-3 botonesPrincipales text-center" type="submit" onclick="">
+                    Save
+                </button>
+            </div>
+        </form>
+
+    </div>
+
+
+
+    <!-- Panel de Control (Ubicado en la Esquina Superior Derecha) -->
+    <div id="panelControl" class="panel panelControl">
+        <div class="pt-2 px-4 d-flex justify-content-between h-15">
+            <h3 class="opacity-75">Control</h3>
+            <button class="btnMinimizar" data-target="panelControl">
+                <span class="material-symbols-rounded">
+                    close
+                </span>
+            </button>
+        </div>
+        <div class="panelBody w-100 d-flex h-85">
+            <div id="anguloAspas" class="h-100 w-33"></div>
+            <div id="torqueGenerador" class="h-100 w-33"></div>
+            <div id="orientacionGondola" class="h-100 w-33"></div>
+        </div>
+    </div>
+
+    <!-- Panel de Salidas (Ubicado en la Esquina Inferior Derecha) -->
+    <div id="panelSalidas" class="panel panelSalidas">
+        <div class="pt-2 px-4 d-flex justify-content-between h-15">
+            <h3 class="opacity-75">Outputs</h3>
+            <button class="btnMinimizar" data-target="panelSalidas">
+                <span class="material-symbols-rounded">
+                    close
+                </span>
+            </button>
+        </div>
+        <div class="panelBody w-100 d-flex flex-column h-85">
+            <div class="w-100 h-50 d-flex justify-content-center align-items-center">
+                <div id="velocidadAngularRotor" class="h-100 w-50"></div>
+                <div id="potenciaGenerador" class="h-100 w-50"></div>
+            </div>
+            <div class="w-100 h-50 d-flex justify-content-center align-items-center">
+                <div id="velocidadAngularGenerador" class="h-100 w-50"></div>
+                <div id="TTD" class="h-100 w-50"></div>
+            </div>
+        </div>
+    </div>
+    
+    <% if(tipoGemelo=='Marino' ){ %>
+        <script src="/logica/gemelo/gemeloDigitalMarino.js"></script>
+    <%} else if(tipoGemelo=='Terrestre' ) {%>
+        <script src="/logica/gemelo/gemeloDigitalTerrestre.js"></script>
+    <% } %>
+</div>

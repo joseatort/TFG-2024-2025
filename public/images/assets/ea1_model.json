@@ -1,0 +1,413 @@
+{
+    "name": "model",
+    "id": "9fec7dbd-9303-4e27-96df-451c860e66f3",
+    "foundation": {
+        "name": "foundation",
+        "id": "b2be417c-7606-4c52-8aa6-6cdd526a2ef7",
+        "element_set": {
+            "name": "foundation",
+            "id": "d42bb9e7-eb1b-4b71-b979-99c1586832e0",
+            "elements": [
+                {
+                    "id": 1,
+                    "eltype": "tube",
+                    "nodes": [
+                        {
+                            "id": 1037,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 6.0
+                        },
+                        {
+                            "id": 1038,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": -10.0
+                        }
+                    ],
+                    "diameter": 75.0,
+                    "thickness": 2.0
+                },
+                {
+                    "id": 2,
+                    "eltype": "tube",
+                    "nodes": [
+                        {
+                            "id": 1039,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 6.0
+                        },
+                        {
+                            "id": 1040,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 10.0
+                        }
+                    ],
+                    "diameter": 5.0,
+                    "thickness": 0.02
+                }
+            ]
+        }
+    },
+    "tower": {
+        "name": "tower",
+        "id": "3361852d-db02-401d-bee2-f9eaad63b247",
+        "element_set": {
+            "name": "tower",
+            "id": "59e1ed5a-5262-44bc-975c-de89691f13c9",
+            "elements": [
+                {
+                    "id": 39,
+                    "eltype": "conicaltube",
+                    "nodes": [
+                        {
+                            "id": 1041,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 10.0
+                        },
+                        {
+                            "id": 1042,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 18.0
+                        }
+                    ],
+                    "diameters": [
+                        5.0,
+                        4.75
+                    ],
+                    "thicknesses": [
+                        0.01,
+                        0.01
+                    ]
+                },
+                {
+                    "id": 40,
+                    "eltype": "conicaltube",
+                    "nodes": [
+                        {
+                            "id": 1043,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 18.0
+                        },
+                        {
+                            "id": 1044,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 26.0
+                        }
+                    ],
+                    "diameters": [
+                        4.75,
+                        4.5
+                    ],
+                    "thicknesses": [
+                        0.01,
+                        0.01
+                    ]
+                },
+                {
+                    "id": 41,
+                    "eltype": "conicaltube",
+                    "nodes": [
+                        {
+                            "id": 1045,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 26.0
+                        },
+                        {
+                            "id": 1046,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 34.0
+                        }
+                    ],
+                    "diameters": [
+                        4.5,
+                        4.25
+                    ],
+                    "thicknesses": [
+                        0.01,
+                        0.01
+                    ]
+                },
+                {
+                    "id": 42,
+                    "eltype": "conicaltube",
+                    "nodes": [
+                        {
+                            "id": 1047,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 34.0
+                        },
+                        {
+                            "id": 1048,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 42.0
+                        }
+                    ],
+                    "diameters": [
+                        4.25,
+                        4.0
+                    ],
+                    "thicknesses": [
+                        0.01,
+                        0.01
+                    ]
+                },
+                {
+                    "id": 43,
+                    "eltype": "conicaltube",
+                    "nodes": [
+                        {
+                            "id": 1049,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 42.0
+                        },
+                        {
+                            "id": 1050,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        }
+                    ],
+                    "diameters": [
+                        4.0,
+                        3.75
+                    ],
+                    "thicknesses": [
+                        0.01,
+                        0.01
+                    ]
+                },
+                {
+                    "id": 44,
+                    "eltype": "conicaltube",
+                    "nodes": [
+                        {
+                            "id": 1051,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 50.0
+                        },
+                        {
+                            "id": 1052,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 58.0
+                        }
+                    ],
+                    "diameters": [
+                        3.75,
+                        3.5
+                    ],
+                    "thicknesses": [
+                        0.01,
+                        0.01
+                    ]
+                },
+                {
+                    "id": 45,
+                    "eltype": "conicaltube",
+                    "nodes": [
+                        {
+                            "id": 1053,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 58.0
+                        },
+                        {
+                            "id": 1054,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 66.0
+                        }
+                    ],
+                    "diameters": [
+                        3.5,
+                        3.25
+                    ],
+                    "thicknesses": [
+                        0.01,
+                        0.01
+                    ]
+                },
+                {
+                    "id": 46,
+                    "eltype": "conicaltube",
+                    "nodes": [
+                        {
+                            "id": 1055,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 66.0
+                        },
+                        {
+                            "id": 1056,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 74.0
+                        }
+                    ],
+                    "diameters": [
+                        3.25,
+                        3.0
+                    ],
+                    "thicknesses": [
+                        0.01,
+                        0.01
+                    ]
+                },
+                {
+                    "id": 47,
+                    "eltype": "conicaltube",
+                    "nodes": [
+                        {
+                            "id": 1057,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 74.0
+                        },
+                        {
+                            "id": 1058,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 82.0
+                        }
+                    ],
+                    "diameters": [
+                        3.0,
+                        2.75
+                    ],
+                    "thicknesses": [
+                        0.01,
+                        0.01
+                    ]
+                },
+                {
+                    "id": 48,
+                    "eltype": "conicaltube",
+                    "nodes": [
+                        {
+                            "id": 1059,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 82.0
+                        },
+                        {
+                            "id": 1060,
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 90.0
+                        }
+                    ],
+                    "diameters": [
+                        2.75,
+                        2.5
+                    ],
+                    "thicknesses": [
+                        0.01,
+                        0.01
+                    ]
+                }
+            ]
+        }
+    },
+    "nacelle": {
+        "name": "nacelle",
+        "id": "46d9fdde-fec9-4bdb-b19d-0408521f0070",
+        "element": {
+            "id": 50,
+            "eltype": "cuboid",
+            "nodes": [
+                {
+                    "id": 1064,
+                    "x": 5.25,
+                    "y": 0.0,
+                    "z": 92.0
+                },
+                {
+                    "id": 1065,
+                    "x": -2.75,
+                    "y": 0.0,
+                    "z": 92.0
+                }
+            ],
+            "width": 4.0,
+            "height": 4.0
+        }
+    },
+    "rotor": {
+        "name": "rotor",
+        "id": "c4e0724a-6661-4e0d-b2a0-3687bec8f200",
+        "blades": [
+            {
+                "name": "Blade_1",
+                "id": "6d2a819c-99da-421f-81f8-86c1fec4d3d5",
+                "url": "/images/assets/models/blade.glb",
+                "scale": {
+                    "x": 5.0,
+                    "y": 2.0,
+                    "z": 2.0
+                }
+            },
+            {
+                "name": "Blade_2",
+                "id": "d49e8d29-9ee2-43f3-8e1d-ffcf84bc4022",
+                "url": "/images/assets/models/blade.glb",
+                "scale": {
+                    "x": 5.0,
+                    "y": 2.0,
+                    "z": 2.0
+                }
+            },
+            {
+                "name": "Blade_3",
+                "id": "d0900fdb-4bfd-46ad-9bf3-cb5fda02f128",
+                "url": "/images/assets/models/blade.glb",
+                "scale": {
+                    "x": 5.0,
+                    "y": 2.0,
+                    "z": 2.0
+                }
+            }
+        ],
+        "hub": {
+            "name": "hub",
+            "id": "525c753e-081c-46bc-83e3-438021767f3d",
+            "cone": {
+                "id": 49,
+                "eltype": "cone",
+                "nodes": [
+                    {
+                        "id": 1061,
+                        "x": -9.0,
+                        "y": 0.0,
+                        "z": 92.0
+                    },
+                    {
+                        "id": 1062,
+                        "x": -4.0,
+                        "y": 0.0,
+                        "z": 92.0
+                    }
+                ],
+                "diameter": 5.0
+            }
+        },
+        "node": {
+            "id": 1063,
+            "x": 5.25,
+            "y": 0.0,
+            "z": 92.0
+        }
+    }
+}

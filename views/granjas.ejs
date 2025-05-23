@@ -1,0 +1,156 @@
+<div id="granjas">
+    <div id="carouselUbicaciones" class="carousel slide panel_info_parques">
+
+        <div class="position-fixed w-100 d-flex justify-content-between align-items-start px-2 py-0 z-index-2">
+            <span class="material-symbols-rounded minimizar fs-3">
+                location_on
+            </span>
+
+            <div class="d-flex">
+                <button class="material-symbols-rounded nuevo_encabezado minimizar px-0 btn-add-granja">
+                    add
+                </button>
+
+                <button class="material-symbols-rounded expand minimizar" data-bs-toggle="modal"
+                    data-bs-target="#listaUbicaciones">
+                    open_in_full
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-indicators minimizar">
+
+            <% granjasUsuario.forEach((granja, index)=> { %>
+                <button type="button" data-bs-target="#carouselUbicaciones" data-bs-slide-to="<%= index %>"
+                    class="active" aria-current="true" aria-label="Slide <%= index %>"></button>
+                <% }) %>
+            <button type="button" data-bs-target="#carouselUbicaciones" data-bs-slide-to="<%= granjasUsuario.length %>"
+                aria-label="Slide <%= granjasUsuario.length %>"></button>
+        </div>
+
+        <div class="carousel-inner minimizar">
+                <% granjasUsuario.forEach((granja, index)=> { %>
+                <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+                    <div class="informacion d-flex flex-column h-100 pt-2 px-4" onclick="movimientos('<%= granja.pos.lat %>', '<%= granja.pos.long %>', '<%= granja.nombre %>')">
+                        <div>
+                            <h5 class="fs-2 pt-2 fw-bold"><%= granja.nombre %></h5>
+                        </div>
+                        <div class="d-flex justify-content-between mt-1">
+                            <p class="fs-5 pt-4 ubicacionCentro">
+                                Latitude: <%= parseFloat(granja.pos.lat).toFixed(4)%> <br> 
+                                Longitude: <%= parseFloat(granja.pos.long).toFixed(4) %>
+                            </p>
+                            <p  class="fs-3 fw-bold clima">
+                                <%= parseFloat(granja.weather.velocidadViento).toFixed(2)%> m/s <br> 
+                                <%= parseFloat(granja.weather.temperatura).toFixed(2)%> °C
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+                <div class="carousel-item <%= granjasUsuario.length === 0 ? 'active' : '' %>">
+                    <div class="informacion d-flex justify-content-center align-items-center flex-column h-100 pt-2 px-4">
+                        <button class="btn-add-granja px-0 botonAnimado" alt="Add a new farm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24">
+                                <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke-width="1.5"></path>
+                                <path d="M8 12H16" stroke-width="1.5"></path>
+                                <path d="M12 16V8" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        </div>
+
+        <button class="carousel-control-prev minimizar" type="button" data-bs-target="#carouselUbicaciones"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next minimizar" type="button" data-bs-target="#carouselUbicaciones"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="listaUbicaciones" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body list-granjas">
+                    <% if (granjasUsuario.length === 0) { %>
+                        <div class="card">
+                            <h5 class="fs-4 fw-bold text-center">No farms exist yet</h5>
+                        </div>
+                    <% } else { %>
+
+                        <% granjasUsuario.forEach((granja)=> { %>
+                            <div class="card">
+                                <div class="mt-2" onclick="movimientos('<%= granja.pos.lat %>', '<%= granja.pos.long %>', '<%= granja.nombre %>')">
+                                    <span class="fw-bold fs-5"> <%= granja.nombre %> </span><br>
+                                    <span>Latitude: <%= parseFloat(granja.pos.lat).toFixed(4) %> Longitude: <%= parseFloat(granja.pos.long).toFixed(4) %></span><br>
+                                </div>
+
+                                <form class="formEliminarGranja my-2">
+                                    <input type="hidden" name="nombreGranja" value="<%= granja.nombre %>">
+                                    <button type="submit" class="btnEliminar btn ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z">
+                                            </path>
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        <% }) %>
+
+                    <% } %>
+                    <div class="card">
+                        <div class="d-flex justify-content-center align-items-center flex-column h-100">
+                            <button class="btn-add-granja px-0 botonAnimado" alt="Add a new farm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24">
+                                    <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke-width="1.5"></path>
+                                    <path d="M8 12H16" stroke-width="1.5"></path>
+                                    <path d="M12 16V8" stroke-width="1.5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modoEdicionGranja">
+        <h5 class="fw-bold">Add Wind Farm</h5>
+        <form id="createGranjaForm">
+            <div class="mb-3">
+                <p class="p-0 m-0">
+                    <small for="recommend" class="form-label fw-bold instrucciones">
+                        1- Position yourself where you want to place the wind farm<br>
+                        2- Enter the wind farm's name <br>
+                        3- Click on the map, where its center will be
+                    </small>
+                </p>
+                <label for="granjaName" class="form-label mt-2">Wind Farm Name</label>
+                <input type="text" class="form-control bg-transparent text-white" id="granjaName" name="nombre" required
+                    placeholder="Enter the name">
+            </div>
+        </form>
+
+        <button class="exit-button" id="cancelarEdicionGranja">
+            <svg height="20px" viewBox="0 0 384 512">
+                <path
+                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                ></path>
+            </svg>
+        </button>
+    </div>
+
+</div>

@@ -1,0 +1,110 @@
+:root {
+  --primary-color: rgb(31, 30, 35);
+  --color-text: rgb(243, 243, 243);
+  --auxiliar-color: rgb(168, 112, 255);
+  --background-color: rgba(243, 243, 243, 0.5);
+}
+
+.modal-content {
+  border: 1px solid var(--auxiliar-color);
+  margin: 20px; 
+  background-color: rgba(31, 30, 35, 0.2);
+  box-shadow: 0 0px 5px var(--auxiliar-color);
+  color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+}
+
+.modal-header {
+  border: 0px;
+  color: var(--color-text);
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.input-field {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  margin-top: 15px;
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  height: 45px;
+  border: 1.5px solid var(--background-color);
+  background: transparent;
+  padding-left: 10px;
+  color: var(--color-text);
+}
+
+.input:focus {
+  border: 1.5px solid var(--auxiliar-color);
+}
+
+.input-field .label {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.input-field .input:focus ~ .label,
+.input-field .input:valid ~ .label {
+  top: -3px;
+  left: 5px;
+  font-size: 15px;
+  color: var(--auxiliar-color);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.modal-footer {
+  justify-content: flex-start;
+  border: 0px;
+}
+
+.submitBtn {
+  width: 100%;
+  height: 55px;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  background: transparent;
+  border: 1.5px solid var(--background-color);
+  box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px var(--auxiliar-color);
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  box-shadow: 0px 0px 0px 2px #ffffff;
+  background: var(--auxiliar-color);
+}
+
+.submitBtn:active {
+  opacity: 0.75;
+}
+
+.bordes{
+  border-radius: 20px;
+}

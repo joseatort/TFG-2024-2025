@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('head.ejs') %>
+<body class="overflow-hidden">
+  
+    <div class="header">
+
+        <% if (tipoGemelo) { %>
+            <button class="botonesPrincipales" id="atrasButton" >
+                Farm
+            </button>
+        <% } %>
+
+        <div class="d-flex justify-content-center align-items-center ms-auto gap-2">
+            
+            <% if (usuario != null) { %>
+                <button class="botonesPrincipales">
+                    <%= usuario.usuario %> <!-- Aquí se muestra el nombre del usuario -->
+                </button>                
+            <% } else { %> 
+                <button class="botonesPrincipales" id="inicioButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Log In
+                </button>
+            <% } %>
+            
+            <% if (usuario != null) { %>
+            <button class="botonLogOut" id="logoutBtn">                
+                <div class="sign">
+                    <svg viewBox="0 0 512 512">
+                        <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path>
+                    </svg>
+                </div>
+                <span class="text">Exit</span>
+            </button>
+            <% } %>
+        </div>
+        
+    </div>
+
+    <%- include('login.ejs') %>
+    
+    <% if (!tipoGemelo) { %>
+        <% if (usuario != null) { %>
+
+            <%- include('granjas.ejs') %>
+            <%- include('panelInformacion.ejs') %>
+            
+        <% } %>
+
+        <canvas id="mapa">
+                Your browser does not support HTML5 Canvas.
+        </canvas>
+    <% } else { %>
+        <%- include('gemelo.ejs', {tipoGemelo: tipoGemelo}) %>
+    <% } %>
+
+    <% if(tipoGemelo){ %>
+        <div class="position-fixed bottom-0 start-0 px-3 opacity-50">
+            <i>Real wind turbine ID: <%= idMolino %> </i>
+        </div>
+    <%}%>
+
+    <div class="position-fixed bottom-0 end-0 px-3 opacity-50">
+        <i>Developed by Airam Martín Peraza & José Antonio Tortosa Aranda</i>
+    </div>
+
+    <input type="hidden" id="tipoGemelo" value="<%= tipoGemelo %>">
+    <input type="hidden" id="toastr" value="<%= JSON.stringify(getAndClearFlash()) %>">
+    <input type="hidden" id="nombreGranja" value="<%= nombreGranja %>">
+    <input type="hidden" id="ultimaUbicacion" value="<%= JSON.stringify(ultimaUbicacion) %>">
+</body>
+
+
+<script src="/javascripts/toastrFunctions.js"></script>
+<script src="/logica/globo/main.js"></script>
+<script src="/javascripts/logIn.js"></script>
+<script src="/javascripts/granja.js"></script>
+<script src="/javascripts/molinos.js"></script>
+<script src="/javascripts/graficos.js"></script>
+</html>

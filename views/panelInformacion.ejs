@@ -1,0 +1,20 @@
+<div class="barraControl">
+    <button class="btnPanel" id="botonUbicaciones">Farms</button>
+    <button class="btnPanel" id="botonInformacionGeneral" data-target="panelInformacionGeneral" onclick="disableButton(this)" disabled>Farm Information</button>
+    <button class="btnPanel" id="botonListaTurbinas" onclick="togglePanelMolinos()" disabled>Wind Turbines List</button>
+</div>
+
+<div id="panelInformacionGeneral" class="panel panelInformacionGeneral">
+    <div class="pt-2 px-4 d-flex justify-content-between h-15">
+        <h3 class="opacity-75">General Information</h3>
+        <button class="btnMinimizar" data-target="panelInformacionGeneral">
+            <span class="material-symbols-rounded">
+                close
+            </span>
+        </button>
+    </div>
+    <div class="panelBody w-100 d-flex h-85">
+        <div id="potenciaGenerada" class="w-50 h-100"></div>
+        <div id="graficoSectorial" class="w-50 h-100"></div>
+    </div>
+</div>
