@@ -1,0 +1,8 @@
+[{
+  "_id": {
+    "$oid": "670947476161b3540954c72c"
+  },
+  "usuario": "admin",
+  "compania": "Iberdrola",
+  "contrasena": "$2b$10$M2NAIPMVUXl.UQ/zemer4uYOoM1akj2vZMprwEyq5XZDWAsEmVqcm"
+}]

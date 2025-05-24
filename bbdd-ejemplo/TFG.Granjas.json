@@ -1,0 +1,878 @@
+[{
+  "_id": {
+    "$oid": "6831ef479dc8a04841dd09f0"
+  },
+  "nombre": "Tenerife",
+  "pos": {
+    "lat": 28.31775981931386,
+    "long": -16.889987409670802
+  },
+  "molinos": [
+    {
+      "pos": {
+        "lat": 28.32360130199114,
+        "long": -16.891179618983184
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:09:54.475Z"
+      },
+      "idMolino": 1,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 28.32050321873376,
+        "long": -16.88780513936293
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:09:55.530Z"
+      },
+      "idMolino": 2,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 28.31752240726985,
+        "long": -16.882589740821288
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:09:56.435Z"
+      },
+      "idMolino": 3,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 28.32348562484789,
+        "long": -16.893033355589143
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:09:58.335Z"
+      },
+      "idMolino": 4,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 28.319082381354246,
+        "long": -16.88846056653707
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:09:59.207Z"
+      },
+      "idMolino": 5,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 28.321847036986696,
+        "long": -16.889939567510908
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:10:00.362Z"
+      },
+      "idMolino": 6,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 28.31628782279014,
+        "long": -16.884367010125853
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:10:01.376Z"
+      },
+      "idMolino": 7,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 28.315621931996102,
+        "long": -16.895568906962918
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:10:07.218Z"
+      },
+      "idMolino": 8,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 28.311986521668963,
+        "long": -16.890386085055784
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:10:09.133Z"
+      },
+      "idMolino": 9,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    }
+  ],
+  "weather": {
+    "velocidadViento": 6.67,
+    "temperatura": 21.57000000000005
+  },
+  "compania": "Iberdrola"
+},
+{
+  "_id": {
+    "$oid": "6831efa59dc8a04841dd09fb"
+  },
+  "nombre": "Tarifa",
+  "pos": {
+    "lat": 36.167625693813605,
+    "long": -5.656327812626623
+  },
+  "molinos": [
+    {
+      "pos": {
+        "lat": 36.16233324566046,
+        "long": -5.6632448348169575
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:11:29.560Z"
+      },
+      "idMolino": 11,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.16415502544931,
+        "long": -5.6618114766295
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:11:31.523Z"
+      },
+      "idMolino": 12,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.16584166423695,
+        "long": -5.660032024643426
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:11:37.375Z"
+      },
+      "idMolino": 13,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.168117281263825,
+        "long": -5.660356142111418
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:11:38.714Z"
+      },
+      "idMolino": 14,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.16610369460489,
+        "long": -5.652101525212402
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:11:39.768Z"
+      },
+      "idMolino": 15,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.16311037351257,
+        "long": -5.650963659049543
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:11:48.598Z"
+      },
+      "idMolino": 16,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.159020993715856,
+        "long": -5.644048788431951
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:11:49.987Z"
+      },
+      "idMolino": 17,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.161261837317056,
+        "long": -5.643971874976701
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:11:50.698Z"
+      },
+      "idMolino": 18,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.16340691785722,
+        "long": -5.643871550509757
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:11:51.465Z"
+      },
+      "idMolino": 19,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.1653118496953,
+        "long": -5.6445725399717475
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:01.141Z"
+      },
+      "idMolino": 20,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.16719501033376,
+        "long": -5.645634731679689
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:01.874Z"
+      },
+      "idMolino": 21,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.16875527429089,
+        "long": -5.651303747081236
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:02.568Z"
+      },
+      "idMolino": 22,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.17057247029347,
+        "long": -5.65008761370103
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:03.129Z"
+      },
+      "idMolino": 23,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.170451271762964,
+        "long": -5.658469540968654
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:26.496Z"
+      },
+      "idMolino": 24,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.17273429395773,
+        "long": -5.657432636578991
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:26.993Z"
+      },
+      "idMolino": 25,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.171960990202535,
+        "long": -5.66826440450935
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:31.843Z"
+      },
+      "idMolino": 26,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.173698096066346,
+        "long": -5.666446990902369
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:32.512Z"
+      },
+      "idMolino": 27,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.17566611599406,
+        "long": -5.665109203184539
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:33.043Z"
+      },
+      "idMolino": 28,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.17497805499842,
+        "long": -5.656850595948036
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:38.455Z"
+      },
+      "idMolino": 29,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 36.17786325527795,
+        "long": -5.663178260907246
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:12:39.118Z"
+      },
+      "idMolino": 30,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    }
+  ],
+  "weather": {
+    "velocidadViento": 6.93,
+    "temperatura": 20.77000000000004
+  },
+  "compania": "Iberdrola"
+},
+{
+  "_id": {
+    "$oid": "6831f0a19dc8a04841dd0a11"
+  },
+  "nombre": "Costa de Bilbao",
+  "pos": {
+    "lat": 43.70149406096536,
+    "long": -3.2478552489810526
+  },
+  "molinos": [
+    {
+      "pos": {
+        "lat": 43.714379312473845,
+        "long": -3.2802699223681056
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:15:38.267Z"
+      },
+      "idMolino": 31,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 43.71432911580846,
+        "long": -3.244053629894489
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:15:40.131Z"
+      },
+      "idMolino": 32,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 43.70043598578593,
+        "long": -3.2808036312460036
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:15:41.682Z"
+      },
+      "idMolino": 33,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 43.70176082414252,
+        "long": -3.241093824470047
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:15:42.850Z"
+      },
+      "idMolino": 34,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 43.71473349295024,
+        "long": -3.2176263031142147
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:15:44.766Z"
+      },
+      "idMolino": 35,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 43.70219649192489,
+        "long": -3.2137062466903834
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:15:46.258Z"
+      },
+      "idMolino": 36,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 43.68788011871004,
+        "long": -3.281398567935677
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:15:47.288Z"
+      },
+      "idMolino": 37,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 43.688945741235905,
+        "long": -3.239740767431159
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:15:48.206Z"
+      },
+      "idMolino": 38,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 43.69058110595056,
+        "long": -3.210954418833064
+      },
+      "potenciaNominal": 15,
+      "longitudAspas": 115,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:15:49.322Z"
+      },
+      "idMolino": 39,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    }
+  ],
+  "weather": {
+    "velocidadViento": 3.1,
+    "temperatura": 17.450000000000045
+  },
+  "compania": "Iberdrola"
+},
+{
+  "_id": {
+    "$oid": "6831f1879dc8a04841dd0a1b"
+  },
+  "nombre": "Hawai",
+  "pos": {
+    "lat": 19.25689332200255,
+    "long": -155.73119531471065
+  },
+  "molinos": [
+    {
+      "pos": {
+        "lat": 19.256102235227367,
+        "long": -155.73377675580062
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:19:30.686Z"
+      },
+      "idMolino": 40,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 19.260375858041016,
+        "long": -155.7286731918118
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:19:31.761Z"
+      },
+      "idMolino": 41,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 19.26567291820655,
+        "long": -155.7289462480358
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:19:33.095Z"
+      },
+      "idMolino": 42,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 19.269588273773927,
+        "long": -155.7252519941216
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:19:35.020Z"
+      },
+      "idMolino": 43,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 19.252817854782247,
+        "long": -155.73117190086197
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:19:40.724Z"
+      },
+      "idMolino": 44,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 19.24989817199264,
+        "long": -155.73591412510157
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:19:42.914Z"
+      },
+      "idMolino": 45,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    },
+    {
+      "pos": {
+        "lat": 19.246335193845553,
+        "long": -155.73305355852537
+      },
+      "potenciaNominal": 5,
+      "longitudAspas": 63,
+      "fechaCreacion": {
+        "$date": "2025-05-24T16:19:44.856Z"
+      },
+      "idMolino": 46,
+      "alarmas": {
+        "rpm": 14,
+        "anguloPlataforma": 8,
+        "TTD": 1,
+        "velocidadViento": 30
+      }
+    }
+  ],
+  "weather": {
+    "velocidadViento": 0.62,
+    "temperatura": 6.210000000000036
+  },
+  "compania": "Iberdrola"
+}]

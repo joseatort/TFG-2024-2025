@@ -24,7 +24,7 @@ app.use(session({
   resave: false, // Evita guardar sesión en cada request
   saveUninitialized: false, // No guarda sesiones vacías
   store: MongoStore.create({
-      client: client, // ✅ Usa la conexión de mongoDb.js
+      client: client, //Usa la conexión de mongoDb.js
       dbName: 'TFG', // Nombre de la base de datos
       collectionName: 'sesiones', // Nombre de la colección
       ttl: 60 * 60 * 24, // Tiempo de expiración (24 horas)

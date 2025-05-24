@@ -1,0 +1,405 @@
+[{
+  "timestamp": {
+    "$date": "2025-05-24T16:09:54.476Z"
+  },
+  "idMolino": 1,
+  "_id": {
+    "$oid": "6831ef529dc8a04841dd09f1"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:09:55.531Z"
+  },
+  "idMolino": 2,
+  "_id": {
+    "$oid": "6831ef539dc8a04841dd09f2"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:09:56.436Z"
+  },
+  "idMolino": 3,
+  "_id": {
+    "$oid": "6831ef549dc8a04841dd09f3"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:09:58.336Z"
+  },
+  "idMolino": 4,
+  "_id": {
+    "$oid": "6831ef569dc8a04841dd09f4"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:09:59.209Z"
+  },
+  "idMolino": 5,
+  "_id": {
+    "$oid": "6831ef579dc8a04841dd09f5"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:10:00.363Z"
+  },
+  "idMolino": 6,
+  "_id": {
+    "$oid": "6831ef589dc8a04841dd09f6"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:10:01.377Z"
+  },
+  "idMolino": 7,
+  "_id": {
+    "$oid": "6831ef599dc8a04841dd09f7"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:10:07.219Z"
+  },
+  "idMolino": 8,
+  "_id": {
+    "$oid": "6831ef5f9dc8a04841dd09f8"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:10:09.134Z"
+  },
+  "idMolino": 9,
+  "_id": {
+    "$oid": "6831ef619dc8a04841dd09f9"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:11:29.562Z"
+  },
+  "idMolino": 11,
+  "_id": {
+    "$oid": "6831efb19dc8a04841dd09fc"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:11:31.526Z"
+  },
+  "idMolino": 12,
+  "_id": {
+    "$oid": "6831efb39dc8a04841dd09fd"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:11:37.377Z"
+  },
+  "idMolino": 13,
+  "_id": {
+    "$oid": "6831efb99dc8a04841dd09fe"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:11:38.716Z"
+  },
+  "idMolino": 14,
+  "_id": {
+    "$oid": "6831efba9dc8a04841dd09ff"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:11:39.773Z"
+  },
+  "idMolino": 15,
+  "_id": {
+    "$oid": "6831efbb9dc8a04841dd0a00"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:11:48.601Z"
+  },
+  "idMolino": 16,
+  "_id": {
+    "$oid": "6831efc49dc8a04841dd0a01"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:11:49.991Z"
+  },
+  "idMolino": 17,
+  "_id": {
+    "$oid": "6831efc59dc8a04841dd0a02"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:11:50.703Z"
+  },
+  "idMolino": 18,
+  "_id": {
+    "$oid": "6831efc69dc8a04841dd0a03"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:11:51.473Z"
+  },
+  "idMolino": 19,
+  "_id": {
+    "$oid": "6831efc79dc8a04841dd0a04"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:01.143Z"
+  },
+  "idMolino": 20,
+  "_id": {
+    "$oid": "6831efd19dc8a04841dd0a05"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:01.879Z"
+  },
+  "idMolino": 21,
+  "_id": {
+    "$oid": "6831efd19dc8a04841dd0a06"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:02.571Z"
+  },
+  "idMolino": 22,
+  "_id": {
+    "$oid": "6831efd29dc8a04841dd0a07"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:03.132Z"
+  },
+  "idMolino": 23,
+  "_id": {
+    "$oid": "6831efd39dc8a04841dd0a08"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:26.500Z"
+  },
+  "idMolino": 24,
+  "_id": {
+    "$oid": "6831efea9dc8a04841dd0a09"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:26.995Z"
+  },
+  "idMolino": 25,
+  "_id": {
+    "$oid": "6831efea9dc8a04841dd0a0a"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:31.848Z"
+  },
+  "idMolino": 26,
+  "_id": {
+    "$oid": "6831efef9dc8a04841dd0a0b"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:32.513Z"
+  },
+  "idMolino": 27,
+  "_id": {
+    "$oid": "6831eff09dc8a04841dd0a0c"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:33.045Z"
+  },
+  "idMolino": 28,
+  "_id": {
+    "$oid": "6831eff19dc8a04841dd0a0d"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:38.460Z"
+  },
+  "idMolino": 29,
+  "_id": {
+    "$oid": "6831eff69dc8a04841dd0a0e"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:12:39.123Z"
+  },
+  "idMolino": 30,
+  "_id": {
+    "$oid": "6831eff79dc8a04841dd0a0f"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:15:38.268Z"
+  },
+  "idMolino": 31,
+  "_id": {
+    "$oid": "6831f0aa9dc8a04841dd0a12"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:15:40.132Z"
+  },
+  "idMolino": 32,
+  "_id": {
+    "$oid": "6831f0ac9dc8a04841dd0a13"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:15:41.683Z"
+  },
+  "idMolino": 33,
+  "_id": {
+    "$oid": "6831f0ad9dc8a04841dd0a14"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:15:42.851Z"
+  },
+  "idMolino": 34,
+  "_id": {
+    "$oid": "6831f0ae9dc8a04841dd0a15"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:15:44.767Z"
+  },
+  "idMolino": 35,
+  "_id": {
+    "$oid": "6831f0b09dc8a04841dd0a16"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:15:46.258Z"
+  },
+  "idMolino": 36,
+  "_id": {
+    "$oid": "6831f0b29dc8a04841dd0a17"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:15:47.292Z"
+  },
+  "idMolino": 37,
+  "_id": {
+    "$oid": "6831f0b39dc8a04841dd0a18"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:15:48.207Z"
+  },
+  "idMolino": 38,
+  "_id": {
+    "$oid": "6831f0b49dc8a04841dd0a19"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:15:49.324Z"
+  },
+  "idMolino": 39,
+  "_id": {
+    "$oid": "6831f0b59dc8a04841dd0a1a"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:19:30.689Z"
+  },
+  "idMolino": 40,
+  "_id": {
+    "$oid": "6831f1929dc8a04841dd0a1c"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:19:31.762Z"
+  },
+  "idMolino": 41,
+  "_id": {
+    "$oid": "6831f1939dc8a04841dd0a1d"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:19:33.097Z"
+  },
+  "idMolino": 42,
+  "_id": {
+    "$oid": "6831f1959dc8a04841dd0a1e"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:19:35.025Z"
+  },
+  "idMolino": 43,
+  "_id": {
+    "$oid": "6831f1979dc8a04841dd0a1f"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:19:40.725Z"
+  },
+  "idMolino": 44,
+  "_id": {
+    "$oid": "6831f19c9dc8a04841dd0a20"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:19:42.915Z"
+  },
+  "idMolino": 45,
+  "_id": {
+    "$oid": "6831f19e9dc8a04841dd0a21"
+  }
+},
+{
+  "timestamp": {
+    "$date": "2025-05-24T16:19:44.857Z"
+  },
+  "idMolino": 46,
+  "_id": {
+    "$oid": "6831f1a09dc8a04841dd0a22"
+  }
+}]

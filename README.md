@@ -18,6 +18,14 @@ Para instalar las dependencias del proyecto, ejecuta el siguiente comando:
 npm install
 ```
 
+## Ejemplo de Base de Datos
+
+Para utilizar correctamente el proyecto, es necesario importar en MongoDB las colecciones que se encuentran en la carpeta `/bbdd-ejemplo`. Estas colecciones contienen datos de ejemplo que facilitan la puesta en marcha y pruebas del sistema.
+
+En particular, la colección **Molinos** es de tipo *Time Series* y está indexada por los campos `idMolino` y `timestamp`. Esto permite almacenar y consultar eficientemente los datos históricos de cada aerogenerador.
+
+Asegúrate de importar todas las colecciones proporcionadas antes de ejecutar el proyecto.
+
 ## Uso
 Para ejecutar el proyecto, utiliza el siguiente comando:
 
